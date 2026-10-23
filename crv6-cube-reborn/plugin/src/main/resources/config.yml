@@ -1,0 +1,8 @@
+# Overlay Freddy POV: only while wearing Freddy / Golden Freddy
+freddy-overlay:
+  enabled: true
+  # Leave empty to auto-serve from this plugin (HTTP on port below)
+  url: ""
+  port: 8765
+  # SHA-1 of freddy_pov_overlay.zip (auto if served locally)
+  sha1: "487c6f6f8991baf860d08798c55dde2ff2b5ace2"

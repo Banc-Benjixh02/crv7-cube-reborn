@@ -1,0 +1,41 @@
+name: CRV6Menu
+version: '1.0.1'
+main: fr.crv6.menu.CRV6MenuPlugin
+api-version: '1.21'
+authors: [CRV6]
+commands:
+  crv6:
+    description: Open CRV6 admin menu
+    usage: /crv6
+    permission: crv6.menu
+    aliases: [crv6menu, crmenu]
+  crmaskdebug:
+    description: Debug mask nametag detection
+    usage: /crmaskdebug
+    permission: crv6.reload
+  crfurniture:
+    description: Give furniture items (socle, table, chaise, mailbox)
+    usage: /crfurniture
+    permission: crv6.give
+    aliases: [crfurn, meuble]
+  crclear:
+    description: Remove display entities in a 3-block radius
+    usage: /crclear
+    permission: crv6.reload
+    aliases: [crv6clear]
+  crreload:
+    description: Reload CRV6Menu plugin
+    usage: /crreload
+    permission: crv6.reload
+    aliases: [crv6reload]
+permissions:
+  crv6.menu:
+    description: Open the CRV6 menu
+    default: true
+  crv6.give:
+    description: Take items from the menu
+    default: op
+  crv6.reload:
+    description: Reload the plugin
+    default: op
+softdepend: [voicechat, TAB, NametagEdit]

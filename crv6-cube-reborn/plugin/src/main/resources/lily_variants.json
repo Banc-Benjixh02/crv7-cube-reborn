@@ -1,0 +1,20 @@
+[
+  {
+    "id": "lily_v2_maid",
+    "label": "V2 Maid",
+    "cmd": 11601,
+    "owner": "LillyChouquette"
+  },
+  {
+    "id": "lily_v3",
+    "label": "V3",
+    "cmd": 11602,
+    "owner": "LillyChouquette"
+  },
+  {
+    "id": "lily_v4",
+    "label": "V4",
+    "cmd": 11603,
+    "owner": "LillyChouquette"
+  }
+]

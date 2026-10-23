@@ -1,0 +1,80 @@
+[
+  {
+    "id": "bulbily_billy_basic",
+    "label": "Basic",
+    "cmd": 11101,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_bear",
+    "label": "Bear",
+    "cmd": 11102,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_bug",
+    "label": "Bug",
+    "cmd": 11103,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_bunny",
+    "label": "Bunny",
+    "cmd": 11104,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_harley",
+    "label": "Harley",
+    "cmd": 11105,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_hd",
+    "label": "Hd",
+    "cmd": 11106,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_idol",
+    "label": "Idol",
+    "cmd": 11107,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_maid",
+    "label": "Maid",
+    "cmd": 11108,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_pink",
+    "label": "Pink",
+    "cmd": 11109,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_prisonier",
+    "label": "Prisonier",
+    "cmd": 11110,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_sombre",
+    "label": "Sombre",
+    "cmd": 11111,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_billy_takeyama",
+    "label": "Takeyama",
+    "cmd": 11112,
+    "owner": "Bulbily"
+  },
+  {
+    "id": "bulbily_chaine_hd",
+    "label": "Chaine Hd",
+    "cmd": 11113,
+    "owner": "Bulbily"
+  }
+]

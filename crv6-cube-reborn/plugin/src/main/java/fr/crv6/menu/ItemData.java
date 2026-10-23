@@ -1,0 +1,140 @@
+package fr.crv6.menu;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+public final class ItemData {
+    public final String category;
+    public final String material;
+    public final int cmd;
+    public final String name;
+
+    public ItemData(String category, String material, int cmd, String name) {
+        this.category = category;
+        this.material = material;
+        this.cmd = cmd;
+        this.name = name;
+    }
+
+    public static final List<ItemData> ALL;
+    public static final Map<String, List<ItemData>> BY_CATEGORY;
+    public static final List<String> CATEGORIES;
+
+    static {
+        List<ItemData> all = new ArrayList<>();
+        all.add(new ItemData("Divers", "amethyst_shard", 1, "Filokette"));
+        all.add(new ItemData("Divers", "amethyst_shard", 2, "Citee"));
+        all.add(new ItemData("Divers", "amethyst_shard", 3, "Mwa"));
+        all.add(new ItemData("Divers", "amethyst_shard", 4, "Zozo"));
+        all.add(new ItemData("Divers", "amethyst_shard", 5, "Castor"));
+        all.add(new ItemData("Divers", "amethyst_shard", 6, "Rzopha"));
+        all.add(new ItemData("Divers", "amethyst_shard", 7, "Medieval"));
+        all.add(new ItemData("Divers", "carrot_on_a_stick", 2, "Netherite Apple"));
+        all.add(new ItemData("Divers", "carrot_on_a_stick", 4, "Tazer Select"));
+        all.add(new ItemData("Divers", "carrot_on_a_stick", 5, "Tazer"));
+        all.add(new ItemData("Divers", "carrot_on_a_stick", 10, "Bouteille O2"));
+        all.add(new ItemData("Divers", "carrot_on_a_stick", 11, "Bouteille O2 I"));
+        all.add(new ItemData("Divers", "carrot_on_a_stick", 12, "Bouteille O2 II"));
+        all.add(new ItemData("Divers", "carrot_on_a_stick", 13, "Bouteille O2 III"));
+        all.add(new ItemData("Divers", "emerald", 1, "Runique"));
+        all.add(new ItemData("Divers", "emerald", 2, "Artefact Vie"));
+        all.add(new ItemData("Divers", "emerald", 3, "Kawacoin"));
+        all.add(new ItemData("Divers", "emerald", 4, "Doge"));
+        all.add(new ItemData("Divers", "emerald", 5, "Keys"));
+        all.add(new ItemData("Divers", "emerald", 6, "Clochette"));
+        all.add(new ItemData("Divers", "emerald", 7, "Piece"));
+        all.add(new ItemData("Divers", "snowball", 1, "Tomate"));
+        all.add(new ItemData("Divers", "snowball", 2, "Ecran"));
+        all.add(new ItemData("Divers", "white_dye", 1, "Mv1"));
+        all.add(new ItemData("Divers", "white_dye", 2, "Mv2"));
+        all.add(new ItemData("Divers", "white_dye", 3, "Mv3"));
+        all.add(new ItemData("Divers", "white_dye", 4, "Mv4"));
+        all.add(new ItemData("Divers", "white_dye", 5, "Staff"));
+        all.add(new ItemData("Divers", "white_dye", 6, "Pokey"));
+        all.add(new ItemData("Nourriture", "apple", 1, "Diamond Cookie"));
+        all.add(new ItemData("Nourriture", "apple", 2, "Orange"));
+        all.add(new ItemData("Nourriture", "apple", 3, "Banane"));
+        all.add(new ItemData("Nourriture", "apple", 4, "Grapes"));
+        all.add(new ItemData("Nourriture", "baked_potato", 1, "Crfc"));
+        all.add(new ItemData("Nourriture", "baked_potato", 2, "Mcdo"));
+        all.add(new ItemData("Nourriture", "cooked_chicken", 1, "Cooked Chokobo"));
+        all.add(new ItemData("Nourriture", "cooked_chicken", 2, "Gallashower"));
+        all.add(new ItemData("Nourriture", "cooked_cod", 1, "Pwasson"));
+        all.add(new ItemData("Nourriture", "cookie", 1, "Netherite Apple"));
+        all.add(new ItemData("Nourriture", "cookie", 2, "Redstone Apple"));
+        all.add(new ItemData("Nourriture", "cookie", 3, "Emerald Apple"));
+        all.add(new ItemData("Nourriture", "cookie", 4, "Mandragor"));
+        all.add(new ItemData("Nourriture", "cookie", 5, "Chiantos ferme"));
+        all.add(new ItemData("Nourriture", "cookie", 6, "Chiantos ouvert"));
+        all.add(new ItemData("Nourriture", "rabbit_stew", 1, "Salade"));
+        all.add(new ItemData("Boosters", "carrot_on_a_stick", 1, "Booster"));
+        all.add(new ItemData("Boosters", "paper", 59, "Booster Or"));
+        all.add(new ItemData("Boosters", "totem_of_undying", 1, "Booster"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 0, "Citrouille"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 1, "Banc"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 2, "Billyhead"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 3, "Llamabase"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 4, "Llamabluecarpet"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 5, "Llamalimecarpet"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 6, "Llamapinkcarpet"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 7, "Masque a gaz"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 8, "Paille"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 9, "Cryzo Block"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 10, "Clavier"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 11, "Scaphandre"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 12, "Chat"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 13, "Petteux"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 14, "Kawa"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 15, "Lillybug"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 16, "Dark Mask"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 17, "Sanglier"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 18, "Freddy"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 19, "Golden Freddy"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 20, "Lunette"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 21, "Casque de UTA"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 22, "Masque de Maskass"));
+        all.add(new ItemData("Citrouilles", "carved_pumpkin", 23, "Ring Gag"));
+        all.add(new ItemData("Divers", "bowl", 1, "Gamelle"));
+        all.add(new ItemData("Divers", "dropper", 1, "Generateur a charbon"));
+        all.add(new ItemData("Divers", "dropper", 2, "Panneau solaire"));
+        all.add(new ItemData("Divers", "dropper", 3, "Batterie RF"));
+        all.add(new ItemData("Divers", "dropper", 4, "Collecteur d'oxygen"));
+        all.add(new ItemData("Echecs", "coal", 1, "Pawn"));
+        all.add(new ItemData("Echecs", "coal", 2, "Rook"));
+        all.add(new ItemData("Echecs", "coal", 3, "Bishop"));
+        all.add(new ItemData("Echecs", "coal", 4, "Knight"));
+        all.add(new ItemData("Echecs", "coal", 5, "King"));
+        all.add(new ItemData("Echecs", "coal", 6, "Queen"));
+        all.add(new ItemData("Echecs", "sugar", 1, "Pawn"));
+        all.add(new ItemData("Echecs", "sugar", 2, "Rook"));
+        all.add(new ItemData("Echecs", "sugar", 3, "Bishop"));
+        all.add(new ItemData("Echecs", "sugar", 4, "Knight"));
+        all.add(new ItemData("Echecs", "sugar", 5, "King"));
+        all.add(new ItemData("Echecs", "sugar", 6, "Queen"));
+        all.add(new ItemData("Armes", "netherite_axe", 1, "Faux"));
+        all.add(new ItemData("Armes", "netherite_axe", 2, "Hache Vert"));
+        all.add(new ItemData("Armes", "netherite_axe", 3, "Zabuza"));
+        all.add(new ItemData("Armes", "netherite_axe", 4, "Panneau"));
+        all.add(new ItemData("Armes", "netherite_pickaxe", 1, "Desasembleur Neutronique"));
+        all.add(new ItemData("Armes", "netherite_sword", 1, "Katanav2"));
+        all.add(new ItemData("Armes", "netherite_sword", 2, "Sourcelame"));
+        all.add(new ItemData("Armes", "netherite_sword", 3, "Boite Au Lettre"));
+        all.add(new ItemData("Armes", "netherite_sword", 4, "Sourcelame3D"));
+        all.add(new ItemData("Armes", "stick", 1, "God"));
+        all.add(new ItemData("Armes", "stick", 2, "Cristal"));
+        all.add(new ItemData("Armes", "wooden_sword", 1, "Bamboo God"));
+        all.add(new ItemData("Armes", "wooden_sword", 2, "God"));
+        all.add(new ItemData("Totems", "totem_of_undying", 2, "Tardis"));
+        all.add(new ItemData("Totems", "totem_of_undying", 3, "Telephone"));
+        ALL = Collections.unmodifiableList(all);
+        Map<String, List<ItemData>> map = new LinkedHashMap<>();
+        for (ItemData d : ALL) {
+            map.computeIfAbsent(d.category, k -> new ArrayList<>()).add(d);
+        }
+        BY_CATEGORY = Collections.unmodifiableMap(map);
+        CATEGORIES = Collections.unmodifiableList(new ArrayList<>(map.keySet()));
+    }
+}

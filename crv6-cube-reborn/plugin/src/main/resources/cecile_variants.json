@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cecile_cecile_prison",
+    "label": "Prison",
+    "cmd": 11401,
+    "owner": "cecile71000"
+  },
+  {
+    "id": "cecile_maid_cecile",
+    "label": "Maid Cecile",
+    "cmd": 11402,
+    "owner": "cecile71000"
+  },
+  {
+    "id": "cecile_normal",
+    "label": "Normal",
+    "cmd": 11403,
+    "owner": "cecile71000"
+  }
+]
